@@ -1,0 +1,12 @@
+docling
+python-dotenv
+langchain-google-genai
+langchain-ollama
+langchain_groq
+langchain
+langchain_community
+langgraph
+langchain_tavily
+psycopg2
+uvicorn
+fastapi
