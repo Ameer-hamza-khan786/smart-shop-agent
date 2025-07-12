@@ -1,10 +1,10 @@
 # main.py
-from .langgraph_agent import app
+from .langgraph_agent import agent
 from .shared import AgentState, _db
 
 if __name__ == "__main__":
     query = input("Enter your business question: ")
-    result = app.invoke(
+    result = agent.invoke(
         {
             "question": query,
             "attempts": 0,

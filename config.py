@@ -18,11 +18,11 @@ EMBEDDING_MODEL = "nomic-embed-text"
 
 # GLOBAL_LLM = ChatOllama(temperature=0, model="llama3.2", base_url=OLLAMA_URL)
 
-GLOBAL_LLM = ChatGroq(model="gemma2-9b-it", temperature=0, api_key=GROQ_API_KEY)
+# GLOBAL_LLM = ChatGroq(model="gemma2-9b-it", temperature=0, api_key=GROQ_API_KEY)
 # GLOBAL_LLM_G = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0)
 
-# GLOBAL_LLM = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0)
+GLOBAL_LLM = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0)
 EMBEDDING_MODEL = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
-
+DOCUMENTS_DIR = "./documents"  # Adjust path as needed
 CHUNK_SIZE = 1000
 CHUNK_OVERLAP = 200

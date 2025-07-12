@@ -1,19 +1,15 @@
 import os
 import datetime
-import hashlib
-import psycopg2
-from dotenv import load_dotenv
 from typing import List
-from langchain_google_genai import GoogleGenerativeAIEmbeddings
-
-# Load environment variables
-load_dotenv()
-
-# Embedding model
-embedding_model = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
+from config import EMBEDDING_MODEL
+from langchain.schema import Document
+import psycopg2
 
 
-def get_pg_connection():
+embedding_model = EMBEDDING_MODEL
+
+
+def get_pg_conn():
     return psycopg2.connect(
         host=os.getenv("PG_HOST"),
         port=os.getenv("PG_PORT"),
@@ -23,115 +19,104 @@ def get_pg_connection():
     )
 
 
-def compute_file_hash(file_path: str) -> str:
-    with open(file_path, "rb") as f:
-        file_bytes = f.read()
-    return hashlib.sha256(file_bytes).hexdigest()
+def insert_chunks(conn, chunks: List[Document], source_file: str = "Unknown"):
+    cursor = conn.cursor()
+    inserted = 0
+    for chunk in chunks:
+        try:
+            content = chunk.page_content.strip()
+            if not content:
+                continue
+
+            embedding = embedding_model.embed_query(content)
+
+            cursor.execute(
+                """
+                INSERT INTO documents (content, source_file , timestamp , embedding)
+                VALUES (%s, %s, %s, %s)
+                """,
+                (
+                    content,
+                    source_file,
+                    datetime.datetime.now(),
+                    embedding,
+                ),
+            )
+            inserted += 1
+        except Exception as e:
+            print(f"[⚠️] Error inserting chunk: {e}")
+            continue
+    conn.commit()
+    print(f"[✅] Inserted {inserted}/{len(chunks)} chunks from {source_file}")
 
 
-def document_exists(cur, doc_hash: str) -> bool:
-    cur.execute("SELECT 1 FROM documents WHERE doc_hash = %s LIMIT 1", (doc_hash,))
-    return cur.fetchone() is not None
-
-
-def insert_chunks_manually(
-    conn, cur, chunks: List[str], source_file: str, doc_type: str, doc_hash: str
-):
+def delete_temp_file():
+    """Delete rows from 'documents' table where source_file contains 'temp_file'"""
     try:
-        timestamp = datetime.datetime.now(datetime.UTC)
-        total_chunks = len(chunks)
+        conn = get_pg_conn()
+        cursor = conn.cursor()
 
-        for idx, chunk in enumerate(chunks):
-            try:
-                embedding = embedding_model.embed_query(chunk)
-                cur.execute(
-                    """
-                    INSERT INTO documents (
-                        embedding, content, source_file, doc_type,
-                        timestamp, chunk_index, total_chunks, doc_hash
-                    )
-                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
-                    """,
-                    (
-                        embedding,
-                        chunk,
-                        os.path.basename(source_file),
-                        doc_type,
-                        timestamp,
-                        idx,
-                        total_chunks,
-                        doc_hash,
-                    ),
-                )
-            except Exception as e:
-                print(f"[⚠️] Failed to insert chunk {idx} from {source_file}: {e}")
+        cursor.execute(
+            """
+            DELETE FROM documents
+            WHERE source_file ILIKE %s
+        """,
+            ("%temp_file%",),
+        )
 
+        deleted = cursor.rowcount
         conn.commit()
-        print(f"[✅] Inserted {total_chunks} chunks from {source_file}")
+        print(f"[🗑️] Deleted {deleted} rows where source_file contains 'temp_file'.")
 
     except Exception as e:
-        print(f"[❌] Insert failed for {source_file}: {e}")
-        conn.rollback()
+        print(f"[❌] Error deleting temp files: {e}")
+    finally:
+        if cursor:
+            cursor.close()
+        if conn:
+            conn.close()
+            print("[🔒] Connection closed after deletion.")
 
 
-def process_document(file_path: str, conn, cur):
-    print(f"[📄] Processing: {file_path}")
+def main():
+    from utils.chunker import chunk_splitter  # Your earlier file
+    from utils.ingestor import RobustIngestor
 
-    doc_hash = compute_file_hash(file_path)
+    FILE_PATH = (
+        "/Users/hamza/Developer/Imp_Projects/smart_shop_ai/documents/laptop_bill.pdf"
+    )
+    # Extract text
+    ingestor = RobustIngestor(input_file=FILE_PATH)
+    markdown_text = ingestor.run()
 
-    if document_exists(cur, doc_hash):
-        print(f"[⚠️] Skipped (duplicate detected): {file_path}")
-        return
+    # Chunk it
+    tables, texts = chunk_splitter(markdown_text)
 
-    from backend.utils.ingestor import RobustIngestor
-
-    ingestor = RobustIngestor(input_file=file_path)
+    all_chunks = tables + texts  # Still distinguished by metadata
 
     try:
-        chunks = ingestor.run()
+        conn = get_pg_conn()
+        insert_chunks(conn, all_chunks, FILE_PATH)
     except Exception as e:
-        print(f"[❌] Ingestor failed for {file_path}: {e}")
-        return
-
-    if not chunks:
-        print(f"[⚠️] No chunks extracted from {file_path}")
-        return
-
-    doc_type = (
-        "image" if file_path.lower().endswith((".jpg", ".jpeg", ".png")) else "document"
-    )
-    insert_chunks_manually(conn, cur, chunks, file_path, doc_type, doc_hash)
+        print(f"[❌] DB Error: {e}")
+    finally:
+        if conn:
+            conn.close()
+            print("[🔒] Connection closed.")
 
 
 if __name__ == "__main__":
-    DOCUMENTS_DIR = "./documents"
-    conn = None
-    cur = None
+    main()
 
-    try:
-        conn = get_pg_connection()
-        cur = conn.cursor()
 
-        for filename in os.listdir(DOCUMENTS_DIR):
-            file_path = os.path.join(DOCUMENTS_DIR, filename)
+# CREATE TABLE IF NOT EXISTS documents (
+#     id SERIAL PRIMARY KEY,
+#     content TEXT,
+#     source_file TEXT,
+#     timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+#     embedding VECTOR(768)
+# );
 
-            if not os.path.isfile(file_path):
-                continue
 
-            if not filename.lower().endswith(
-                (".pdf", ".docx", ".pptx", ".jpg", ".jpeg", ".png")
-            ):
-                print(f"[⚠️] Unsupported file type: {file_path}")
-                continue
-
-            process_document(file_path, conn, cur)
-
-    except Exception as e:
-        print(f"[❌] Fatal DB error: {e}")
-
-    finally:
-        if cur:
-            cur.close()
-        if conn:
-            conn.close()
-        print("[🔒] Database connection closed.")
+# psql -h localhost -U hamza -d vector_db -> Connect to the vector_db database
+# DELETE FROM documents;

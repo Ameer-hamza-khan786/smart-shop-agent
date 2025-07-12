@@ -1,0 +1,734 @@
+Processing QUOTATION_papa_bill.pdf:
+| SR. NO. | PRODUCTNAME | QUANTITY | RATE INC. GST | AMOUNT |
+|---|---|---|---|---|
+| 1 | EP-140 5 LTR | 5 | 2730 | 13650 |
+| 2 | EP-90 5 LTR | 5 | 2630 | 13150 |
+| 3 | 15W40 5 LTR | 3 | 2730 | 8190 |
+| 4 | TQ 5 LTR | 3 | 2300 | 6900 |
+| 5 | TQ 1 LTR | 3 | 2350 | 7050 |
+| 6 | TQ 500ML | 2 | 1270 | 2540 |
+| 7 | 20W40 1 LTR | 1 | 2830 | 2830 |
+| 8 | 15W40 1 LTR | 1 | 2800 | 2800 |
+| 9 | EP-90 1 LTR | 6 | 2700 | 16200 |
+| 10 | EP-140 1 LTR | 6 | 2800 | 16800 |
+| 11 | 15W40 10 LTR | 6 | 1350 | 8100 |
+| 12 | 15W40 7.5 LTR | 3 | 975 | 2925 |
+| 13 | GELL GREASE 1/2 KG | 1 | 2580 | 2580 |
+| 14 | GELL GREASE 1 KG | 1 | 2580 | 2580 |
+| 15 | GELL GREASE 2 KG | 3 | 2580 | 7740 |
+| 16 | GELL GREASE 5 KG | 2 | 4300 | 8600 |
+
+## QUOTATION
+
+|           | TOTAL              | 51         |                 | 122635   |
+
+Processing laptop_bill.pdf:
+| Product | Title | Qty | Gross Amount ₹ | Discounts /Coupons ₹ | Taxable Value ₹ | IGST ₹ | Total ₹ |
+|---|---|---|---|---|---|---|---|
+| Laptops FSN: COMH64PYZU4ZZR79 HSN/SAC: 84713010 | Apple MacBook AIR Apple M2 - (16 GB/256 GB SSD /macOS Sequoia) MC7W4HN/A Warranty: 1 Year Limited Warranty 1. [IMEI/Serial No: SGMGTQK K904 | 1 | 69990 | -2250 | 57406.8 | 10333.2 | 67740 |
+| Shipping And Handling Charges | 1 | 40 | -40 | 0 | 0 | 0 |
+| Total | Total | 1 | 70030 | -2290 | 57406.8 | 10333.2 | 67740 |
+
+| Description | Qty | Gross Amount ₹ | Discounts /Coupons ₹ | Taxable value ₹ | IGST ₹ | Total ₹ |
+|---|---|---|---|---|---|---|
+| SAC: 998599 | Protect Promise Fee 1. [IMEI/Serial No: ] SGMGTQK K904 18.0 % IGST: | 1 | 99 | 0 | 83.9 | 15.1 |
+| Total | Total | 1 | 99 | 0 | 83.9 | 15.1 |
+
+| Description | Qty | Gross Amount ₹ | Discount | Taxable value ₹ | IGST ₹ | Total ₹ |
+|---|---|---|---|---|---|---|
+| SAC: 998599 | Offer Handling Fee 1. [IMEI/Serial No: ] SGMGTQK K904 18.0 % IGST: | 1 | 69 | 0 | 58.47 | 10.53 |
+| Total | Total | 1 | 69 | 0 | 58.47 | 10.53 |
+
+## Tax Invoice
+
+## Sold By: CIGFIL RETAIL PRIVATE LIMITED ,
+
+Ship-from Address: Rectangle No. 06, Rectangle No. 07, Rectangle No. 08 and Rectangle No. 13, Village- Khalikpur, Tehsil- Badli, District- Jhajjar,FC- Farrukhnagar, Jhajjar , Haryana, India - 124103, IN-HR
+
+GSTIN - 06AAICC4863G1ZL
+
+<!-- image -->
+
+Invoice Number # FAD58L2600017644
+
+*Keep this invoice and manufacturer box for warranty purposes.
+
+## Ship To AMEER HAMZA KHAN
+
+D quaters 133, Hostel 15 Iiest Shibur, Indian Institute Of Engineering Science And Technology, Shibpur. Howrah 711103 West Bengal Phone: xxxxxxxxxx
+
+Bill To
+
+AMEER HAMZA KHAN
+
+D quaters 133, Hostel 15 Iiest Shibur, Indian Institute Of Engineering Science And Technology, Shibpur. Howrah 711103 West Bengal Phone: xxxxxxxxxx
+
+Order ID:
+
+OD334310758274494100
+
+03-05-2025
+
+Order Date:
+
+03-05-2025
+
+Invoice Date:
+
+AAICC4863G
+
+PAN:
+
+U74999KA2019PTC129964
+
+CIN:
+
+Total items: 1
+
+
+<!-- image -->
+
+Grand Total
+
+₹ 67740.00
+
+CIGFIL RETAIL PRIVATE LIMITED
+
+Signature
+
+03-05-2025
+
+Order Date:
+
+03-05-2025
+
+Invoice Date:
+
+AAICC4863G
+
+PAN:
+
+U74999KA2019PTC129964
+
+CIN:
+
+Total items: 1
+
+
+<!-- image -->
+
+Grand Total
+
+₹ 67740.00
+
+CIGFIL RETAIL PRIVATE LIMITED
+
+Signature
+
+Authorized Signatory
+
+<!-- image -->
+
+: At Flipkart we try to deliver perfectly each and every time. But in the off-chance that you need to return the item, please do so with the Returns Policy original Brand box/price without which it will be really difficult for us to act on your request. Please help us in helping you. Terms and conditions apply. tag, original packing and invoice
+
+The goods sold as are intended for end user consumption and not for re-sale.
+
+Regd. office: , SURVEY NO 28-29, SOUKYA ROAD, KACHARAKANAHALLI,, Bengaluru (Bangalore) Rural,, Karnataka, - 560067 CIGFIL RETAIL PRIVATE LIMITED
+
+Contact Flipkart: 044-45614700 | 044-67415800 || www.flipkart.com/helpcentre
+
+## Tax Invoice
+
+## Sold By: CIGFIL RETAIL PRIVATE LIMITED ,
+
+Contact Flipkart: 044-45614700 | 044-67415800 || www.flipkart.com/helpcentre
+
+## Tax Invoice
+
+## Sold By: CIGFIL RETAIL PRIVATE LIMITED ,
+
+Ship-from Address: Rectangle No. 06, Rectangle No. 07, Rectangle No. 08 and Rectangle No. 13, Village- Khalikpur, Tehsil- Badli,
+
+District- Jhajjar,FC- Farrukhnagar, Jhajjar , Haryana, India - 124103, IN-HR
+
+GSTIN - 06AAICC4863G1ZL
+
+<!-- image -->
+
+Invoice Number
+
+# FAT5IH2600012612
+
+Billing Address
+
+AMEER HAMZA KHAN D quaters 133, Hostel 15 Iiest Shibur, Indian Institute Of Engineering Science And Technology, Shibpur, Howrah 711103 West Bengal
+
+Phone: xxxxxxxxxx
+
+Order ID:
+
+OD334310758274494100
+
+03-05-2025
+
+Order Date:
+
+03-05-2025
+
+Invoice Date:
+
+AAICC4863G
+
+PAN:
+
+U74999KA2019PTC129964
+
+CIN:
+
+
+Grand Total
+
+₹ 99.00
+
+CIGFIL RETAIL PRIVATE LIMITED
+
+Signature
+
+<!-- image -->
+
+Authorized Signatory
+
+<!-- image -->
+
+03-05-2025
+
+Invoice Date:
+
+AAICC4863G
+
+PAN:
+
+U74999KA2019PTC129964
+
+CIN:
+
+
+Grand Total
+
+₹ 99.00
+
+CIGFIL RETAIL PRIVATE LIMITED
+
+Signature
+
+<!-- image -->
+
+Authorized Signatory
+
+<!-- image -->
+
+Regd. office: , SURVEY NO 28-29, SOUKYA ROAD, KACHARAKANAHALLI,, Bengaluru (Bangalore) Rural,, Karnataka, - 560067 CIGFIL RETAIL PRIVATE LIMITED
+
+Contact Flipkart: 044-45614700 | 044-67415800 || www.flipkart.com/helpcentre
+
+## Tax Invoice
+
+## Sold By: Flipkart Internet Private Limited ,
+
+Ship-from Address: Buildings Alyssa, Begonia &amp; Clover, Embassy Tech Village, Outer Ring Road, Devarabeesanahalli Village,
+
+Bengaluru, Bengaluru, Karnataka, IN - 560103, CIN: U51109KA2012PTC066107
+
+GSTIN - 29AACCF0683K1ZD
+
+<!-- image -->
+
+Invoice Number
+
+# FBF3026001203942
+
+Billing Address
+
+AMEER HAMZA KHAN D quaters 133, Hostel 15 Iiest Shibur, Indian Institute Of Engineering Science And Technology, Shibpur, Howrah 711103 West Bengal Phone: xxxxxxxxxx
+
+## Order ID: OD334310758274494100
+
+03-05-2025
+
+## Order ID: OD334310758274494100
+
+03-05-2025
+
+Order Date:
+
+03-05-2025
+
+Invoice Date:
+
+
+## Grand Total
+
+## ₹ 69.00
+
+Flipkart Internet Private Limited
+
+Signature
+
+<!-- image -->
+
+Authorized Signatory
+
+<!-- image -->
+
+Regd. office: , Buildings Alyssa, Begonia &amp; Clover, Embassy Tech Village, Outer Ring Road, Devarabeesanahalli Village, Bengaluru, Bengaluru, Karnataka Flipkart Internet Private Limited 560103 CIN: U51109KA2012PTC066107
+
+Contact Flipkart: 044-45614700|044-67415800 || www.flipkart.com/helpcentre
+
+Processing H_2022ITB087_AmeerHamzaKhan_IncomeCertificate_InformationTechnology.jpeg:
+```json
+{
+  "short_summary_of_invoice": "Income Certificate",
+  "invoice_number": "RS/439/0111/60204/2024 /बी-121/2024",
+  "date": "2024-09-04",
+  "vendor_name": "मध्यप्रदेश शासन",
+  "Phone_No": "",
+  "items": [],
+  "total_quantity": 0,
+  "total_amount": 0.0
+}
+```
+
+Processing MESS_BILL.pdf:
+<!-- image -->
+
+## Hall Management Council
+
+## Indian Institute of Engineering Science &amp; Technology, Shibpur
+
+(Formerly BESU, Shibpur, Estd. In 1856)
+
+## Money Receipt
+
+Received with thanks from Shri AMEER HAMZA KHAN ( 2022ITB087 ) on Account of:
+
+Bill No
+
+: 250540001
+
+Bill Date
+
+: 13/06/2025
+
+Bill Month
+
+: 2025-05
+
+Hostel
+
+: Qtr-D133 ( H-15 Exten)
+
+Semester
+
+: 6th Semester
+
+Ledger
+
+: Mess Fees
+
+Amount
+
+: Rs. 1,241.00/-
+
+Receipt Date
+
+: 01/07/2025 19:47
+
+Transaction ID
+
+: BD YUR32591909081
+
+Reference No.
+
+: 518219652719
+
+Superintendent (Incharge) Mess Section
+
+Indian Institute of Engineering Science &amp; Technology, Shibpur
+
+Processing WhatsApp Image 2025-06-27 at 8.00.24 PM.jpeg:
+```json
+{
+  "short_summary_of_invoice": "Transaction Successful to Indian Institute Of Engineering Science and Technolo",
+  "invoice_number": "T2506271959555648984500",
+  "date": "2025-06-27",
+  "vendor_name": "Indian Institute Of Engineering Science and Technolo",
+  "Phone_No": "",
+  "items": [],
+  "total_quantity": 0,
+  "total_amount": 1201.0
+}
+```
+
+Processing WhatsApp Image 2025-06-30 at 8.08.59 PM.jpeg:
+```json
+{
+  "short_summary_of_invoice": "Diagram of invoice processing using LLM",
+  "invoice_number": "",
+  "date": "",
+  "vendor_name": "",
+  "Phone_No": "",
+  "items": [],
+  "total_quantity": 0,
+  "total_amount": 0.0
+}
+```
+
+Processing WhatsApp Image 2025-06-29 at 10.45.36 PM (1).jpeg:
+```json
+{
+  "short_summary_of_invoice": "Invoice from CM LUBE INDIA",
+  "invoice_number": "CML/930/24-25",
+  "date": "2025-02-08",
+  "vendor_name": "CM LUBE INDIA",
+  "Phone_No": "00444 003/330",
+  "items": [
+    {
+      "name": "GELL GREASE 5 KG.",
+      "qty": 4,
+      "rate": 4300.0,
+      "price": 3644.07
+    },
+    {
+      "name": "GELL GREASE 2 KG.",
+      "qty": 18,
+      "rate": 2580.0,
+      "price": 6559.32
+    },
+    {
+      "name": "GELL GREASE 1 KG.",
+      "qty": 24,
+      "rate": 2580.0,
+      "price": 4372.88
+    },
+    {
+      "name": "GELL GREASE 1/2 KG.",
+      "qty": 48,
+      "rate": 2580.0,
+      "price": 4372.88
+    },
+    {
+      "name": "GEAR OIL EP-90 1 LTR.",
+      "qty": 60,
+      "rate": 2700.01,
+      "price": 6864.42
+    },
+    {
+      "name": "GEAR OIL EP-140 GL-4 1 LTR",
+      "qty": 80,
+      "rate": 2800.0,
+      "price": 9491.52
+    },
+    {
+      "name": "TO OIL 1 LTR.",
+      "qty": 40,
+      "rate": 2350.01,
+      "price": 3983.06
+    },
+    {
+
+"qty": 80,
+      "rate": 2800.0,
+      "price": 9491.52
+    },
+    {
+      "name": "TO OIL 1 LTR.",
+      "qty": 40,
+      "rate": 2350.01,
+      "price": 3983.06
+    },
+    {
+      "name": "TO OIL 1/2 LTR.",
+      "qty": 40,
+      "rate": 1270.0,
+      "price": 2152.54
+    },
+    {
+      "name": "GEAR OIL EP-90 5 LTR.",
+      "qty": 12,
+      "rate": 2630.0,
+      "price": 6686.43
+    },
+    {
+      "name": "GEAR OIL EP-140 GL-4 5 LTR.",
+      "qty": 20,
+      "rate": 2730.0,
+      "price": 11567.80
+    },
+    {
+      "name": "TO OIL 6 LTR.",
+      "qty": 8,
+      "rate": 2730.0,
+      "price": 4627.12
+    },
+    {
+      "name": "OIL 15W40 CF-4 1 LTR.",
+      "qty": 4,
+      "rate": 2300.0,
+      "price": 1949.15
+    },
+    {
+      "name": "OIL 20W40 1LT",
+      "qty": 20,
+      "rate": 2600.0,
+      "price": 2372.88
+    },
+    {
+      "name": "OIL 15W40 CF-4 10 LTR",
+      "qty": 20,
+      "rate": 2830.01,
+      "price": 2398.31
+    }
+  ],
+  "total_quantity": 406,
+
+"rate": 2600.0,
+      "price": 2372.88
+    },
+    {
+      "name": "OIL 15W40 CF-4 10 LTR",
+      "qty": 20,
+      "rate": 2830.01,
+      "price": 2398.31
+    }
+  ],
+  "total_quantity": 406,
+  "total_amount": 94630.0
+}
+```
+
+Processing WhatsApp Image 2025-06-17 at 8.16.58 PM.jpeg:
+```json
+{
+  "short_summary_of_invoice": "Order & Estimate from CIST Corporation dated 2022-09-30",
+  "invoice_number": "848",
+  "date": "2022-09-30",
+  "vendor_name": "CIST Corporation",
+  "Phone_No": "9009303572",
+  "items": [
+    {
+      "name": "O' Hinges doritoss",
+      "qty": 15.0,
+      "rate": 125.0,
+      "price": 1875.0
+    },
+    {
+      "name": "0° Ebro soft close",
+      "qty": 10.0,
+      "rate": 165.0,
+      "price": 1650.0
+    },
+    {
+      "name": "O' Hafele",
+      "qty": 4.0,
+      "rate": 295.0,
+      "price": 1180.0
+    },
+    {
+      "name": "8° Hafele",
+      "qty": 6.0,
+      "rate": 310.0,
+      "price": 1860.0
+    },
+    {
+      "name": "20 Hafele",
+      "qty": 6.0,
+      "rate": 385.0,
+      "price": 2310.0
+    },
+    {
+      "name": "18\" Hafele",
+      "qty": 4.0,
+      "rate": 370.0,
+      "price": 1480.0
+    },
+    {
+      "name": "19X6 (+1",
+      "qty": 500.0,
+      "rate": 0.0,
+      "price": 195.0
+    },
+    {
+      "name": "O'Ebro",
+
+"qty": 4.0,
+      "rate": 370.0,
+      "price": 1480.0
+    },
+    {
+      "name": "19X6 (+1",
+      "qty": 500.0,
+      "rate": 0.0,
+      "price": 195.0
+    },
+    {
+      "name": "O'Ebro",
+      "qty": 3.0,
+      "rate": 165.0,
+      "price": 495.0
+    },
+    {
+      "name": "O'Ebro",
+      "qty": 3.0,
+      "rate": 0.0,
+      "price": 495.0
+    }
+  ],
+  "total_quantity": 551.0,
+  "total_amount": 10550.0
+}
+```
+
+Processing Smart Inventory Usecases.pdf:
+| Table | Description |
+|---|---|
+| Sales_data | Records of sales: customer amount quantity |
+
+| Table | Description |
+|---|---|
+| Purchase_data | Records of purchases: vendor amount quantity |
+| Products | Product catalog with prices and available quantity |
+| Profit_Loss | Tracks if each sale is profitable or not |
+| Sale_X_Prod | Link table between sales and products sold |
+| Purchase_X_Prod | Link table between purchases and products bought |
+| Udhar_sales | Credit sales log with due dates |
+| Udhar_purchase | Credit purchase log with due dates |
+| Customers | Customer contact information |
+| Vendors | Vendor contact information |
+
+<!-- image -->
+
+## AI-Powered Smart Inventory and Bill Management System: Use Cases &amp; Architecture
+
+## 1. Document and Important Bill Storage
+
+## Supported File Types:
+
+```
+PDFs ( .pdf ) Images ( .jpeg , .png ) containing text · ·
+```
+
+## Flow:
+
+```
+[PDF/Image Upload] + [Metadata: Date, Keywords, Filename] ↓ [Text Extraction (OCR for Images)] ↓ [Chunked Text Data] → [Vector Embeddings with Metadata] ↓ [ChromaDB Storage]
+```
+
+Note: Each vector contains metadata pointing to the original file (filename, type, upload date, etc.)
+
+## 2. Querying Documents and Bills Using RAG
+
+## 2a) Info Retrieval from Documents
+
+```
+User Query ↓ Convert to Vector → Search Top-K Similar Vectors in ChromaDB ↓ Return Relevant Text Chunks ↓ Prompt = [User Query + Retrieved Text Chunks] ↓ → [LLM] → Final Response
+```
+
+## 2b) File-Level Document Retrieval
+
+```
+User Query ↓ Convert to Vector → Search Top-K Similar Vectors ↓ Use Metadata to Retrieve File Names
+```
+
+```
+↓ Display List of Relevant Files
+
+```
+
+## 2b) File-Level Document Retrieval
+
+```
+User Query ↓ Convert to Vector → Search Top-K Similar Vectors ↓ Use Metadata to Retrieve File Names
+```
+
+```
+↓ Display List of Relevant Files
+```
+
+## 3. Inventory Query using LLM + SQL
+
+```
+User Query ↓ Prompt = [User Query + SQL Table Schema] ↓ → [LLM Generates SQL Query] ↓ Execute Query on SQL DB ↓ Return Result to User
+```
+
+## 4. LLM Query Panel for Specific Document
+
+Users can:
+
+- Select a document from the database or upload a new one ·
+- Ask questions directly about that specific document ·
+
+Flow:
+
+```
+Selected/Uploaded Doc + User Query ↓ Text Extraction → Embeddings ↓ Query against Extracted Content ↓ → [LLM] → Answer
+
+```
+Selected/Uploaded Doc + User Query ↓ Text Extraction → Embeddings ↓ Query against Extracted Content ↓ → [LLM] → Answer
+```
+
+## 5. Custom Notification Generation
+
+User-defined reminders based on:
+
+- Custom events ·
+- Inventory updates ·
+- Scheduled tasks ·
+
+Stored with dates &amp; triggers for system alerts
+
+## 6. System Notifications
+
+## Automated Notifications Based on System State:
+
+- Stock Alerts: ·
+- Out of Stock ·
+- Overstock ·
+- Udhar/Credit-Debit Alerts: ·
+- Based on due dates ·
+- Custom Reminders: ·
+- Triggered by user-defined conditions ·
+
+## 7. E-Generated Manual Bills (Sales or Purchase)
+
+User initiates bill generation:
+
+```
+Type: Sales / Purchase ↓ Name & Phone Number ↓ Product List (auto-update product table if new) ↓ Quantity + Rate (buying & optional selling price) ↓ For Sales: Update Profit/Loss ↓ For Udhar: Set Payment Reminder Date ↓ Store all relevant information in tables
+
+```
+
+## 8. Udhar (Credit System)
+
+- Udhar Sales Table: Links credit-based sales with payment reminders ·
+- Udhar Purchase Table: Same for purchases ·
+
+Each entry includes:
+
+- Transaction ID ·
+- Entry Date ·
+- Expected Payment Date ·
+
+## 9. Data Tables Overview
+
+
+
+## System Architecture Overview Diagram
+
+<!-- image -->
+
+▼
+
+This system ensures robust inventory control, intelligent document retrieval, dynamic user interaction via LLM, and an adaptive credit/payment management system all working together locally or via private infrastructure.
+
+Next Steps? We can now define APIs for each of these modules using FastAPI and a lightweight frontend (e.g., Streamlit or React). Want to proceed to the API design?
+

@@ -1,23 +1,16 @@
 import os
 import base64
-from dotenv import load_dotenv
 from docling.document_converter import DocumentConverter
-from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.messages import HumanMessage
-from config import GLOBAL_LLM, CHUNK_SIZE, CHUNK_OVERLAP
-
-# Load environment variables (e.g., GOOGLE_API_KEY)
-load_dotenv()
+from config import GLOBAL_LLM
 
 
 class RobustIngestor:
-    def __init__(self, input_file, chunk_size=CHUNK_SIZE, chunk_overlap=CHUNK_OVERLAP):
+    def __init__(self, input_file):
         self.input_file = input_file
-        self.chunk_size = chunk_size
-        self.chunk_overlap = chunk_overlap
         self.llm = GLOBAL_LLM
 
-    def extract_text_from_image(self):
+    def extract_text_from_image(self) -> str:
         print("[INFO] Using Gemini to extract text from image...")
         with open(self.input_file, "rb") as img_file:
             image_data = img_file.read()
@@ -86,45 +79,28 @@ You will be given an image of a **handwritten Indian invoice**. Your task is to 
                 )
             ]
         )
-        return response.content
+        return str(response.content)
 
-    def convert_document(self):
+    def convert_document(self) -> str:
         print("[INFO] Converting document to markdown using docling...")
         converter = DocumentConverter()
         result = converter.convert(self.input_file)
         return result.document.export_to_markdown()
 
-    def chunk_text(self, text):
-        print("[INFO] Splitting text into chunks...")
-        splitter = RecursiveCharacterTextSplitter(
-            chunk_size=self.chunk_size,
-            chunk_overlap=self.chunk_overlap,
-            separators=["\n\n", "\n", ".", " "],
-        )
-
-        chunks = splitter.split_text(text)
-        return chunks
-
-    def run(self):
+    def run(self) -> str:
         file_ext = os.path.splitext(self.input_file)[-1].lower()
         if file_ext in (".jpeg", ".jpg", ".png"):
             text = self.extract_text_from_image()
         else:
             text = self.convert_document()
 
-        chunks = self.chunk_text(text)
-        print(f"[DONE] Processed {len(chunks)} chunks.")
-
-        return chunks
+        return text
 
 
 if __name__ == "__main__":
     input_file = "/Users/hamza/Developer/Imp_Projects/smart_shop/documents/WhatsApp Image 2025-06-17 at 8.16.58 PM.jpeg"  # or "image1.jpeg"
     ingestor = RobustIngestor(input_file=input_file)
-    chunks = ingestor.run()
-
-    for i, chunk in enumerate(chunks):
-        print(f"\n--- Chunk {i + 1} ---\n{chunk}\n{'-' * 40}")
+    text = ingestor.run()
 
 
 # {

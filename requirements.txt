@@ -10,3 +10,4 @@ langchain_tavily
 psycopg2
 uvicorn
 fastapi
+semantic-chunker
