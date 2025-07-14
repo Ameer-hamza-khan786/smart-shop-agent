@@ -3,6 +3,7 @@ from langchain_core.messages import BaseMessage, HumanMessage, AIMessage
 from langgraph.graph import StateGraph, END
 from .nodes import router_node, rag_node, web_node, answer_node
 from .shared import AgentState
+from IPython.display import display
 
 
 # ── Routing helpers ─────────────────────────────────────────────────
@@ -36,3 +37,8 @@ g.add_edge("web_search", "answer")
 g.add_edge("answer", END)
 
 agent = g.compile()
+
+
+if __name__ == "__main__":
+    # Visualize the agent structure as a graph
+    display(agent.get_graph().draw_mermaid())

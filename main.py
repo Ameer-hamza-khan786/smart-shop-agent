@@ -22,14 +22,14 @@ class QueryInput(BaseModel):
 def run_agent(query: QueryInput):
     user_message = HumanMessage(content=query.question)
     if query.agent_type == "rag":
-        initial_state: AgentState = {
+        initial_state: RagAgentState = {
             "messages": user_message,
             "route": "rag",  # Start with RAG lookup
             "rag": "",
             "web": "",
             "Rag_Citation": None,
             "Web_Citation": None,
-        }
+        }  # type: ignore
         final_state = rag_agent.invoke(initial_state)
 
     elif query.agent_type == "sql":

@@ -146,110 +146,120 @@ def extract_text_preview(file_path: str) -> str:
 
 def main():
     # Custom CSS for dark green text and styling
-    # st.markdown(
-    #     """
-    # <style>
-    # :root {
-    #     --green-dark: #1a3e1a;  /* Darker green for all text */
-    #     --green-main: #43a047;
-    #     --green-deep: #2e7d32;
-    #     --green-bg-light: #f1f8e9;
-    #     --green-bg-sidebar: #e8f5e9;
-    # }
+    st.markdown(
+        """
+    <style>
+    :root {
+        --green-dark: #1a3e1a;  /* Darker green for all text */
+        --green-main: #43a047;
+        --green-deep: #2e7d32;
+        --green-bg-light: #f1f8e9;
+        --green-bg-sidebar: #e8f5e9;
+    }
 
-    # /* Entire app text color */
-    # html, body, [class*="st-"], .stMarkdown p, .stMarkdown li,
-    # .stMarkdown strong, .stMarkdown em, .markdown-text-container,
-    # .stTextInput input, .stTextArea textarea, .stSelectbox select,
-    # .stRadio label, .stCheckbox label, .stMetric, .stExpander,
-    # .stAlert, .stSuccess, .stWarning, .stError, .stInfo {
-    #     color: var(--green-dark) !important;
-    # }
+    /* Entire app text color */
+    html, body, [class*="st-"], .stMarkdown p, .stMarkdown li,
+    .stMarkdown strong, .stMarkdown em, .markdown-text-container,
+    .stTextInput input, .stTextArea textarea, .stSelectbox select,
+    .stRadio label, .stCheckbox label, .stMetric, .stExpander,
+    .stAlert, .stSuccess, .stWarning, .stError, .stInfo {
+        color: var(--green-dark) !important;
+    }
 
-    # /* Page background */
-    # .stApp {
-    #     background-color: white;
-    # }
+    /* Page background */
+    .stApp {
+        background-color: white;
+    }
 
-    # /* Sidebar */
-    # section[data-testid="stSidebar"] {
-    #     background-color: var(--green-bg-sidebar);
-    # }
+    /* Sidebar */
+    section[data-testid="stSidebar"] {
+        background-color: var(--green-bg-sidebar);
+    }
 
-    # /* Headers */
-    # h1, h2, h3, h4, h5, h6 {
-    #     color: var(--green-dark) !important;
-    # }
+    /* Headers */
+    h1, h2, h3, h4, h5, h6 {
+        color: var(--green-dark) !important;
+    }
 
-    # /* Buttons */
-    # .stButton > button {
-    #     background-color: var(--green-main);
-    #     color: white !important;
-    #     border: none;
-    #     border-radius: 0.4rem;
-    #     padding: 0.5rem 1rem;
-    #     font-weight: 600;
-    # }
+    /* Buttons */
+    .stButton > button {
+        background-color: var(--green-main);
+        color: white !important;
+        border: none;
+        border-radius: 0.4rem;
+        padding: 0.5rem 1rem;
+        font-weight: 600;
+    }
 
-    # .stButton > button:hover {
-    #     background-color: var(--green-deep);
-    #     color: white !important;
-    # }
+    .stButton > button:hover {
+        background-color: var(--green-deep);
+        color: white !important;
+    }
 
-    # /* Chat messages */
-    # .stChatMessage {
-    #     background-color: var(--green-bg-light);
-    #     border-radius: 0.5rem;
-    #     padding: 1rem;
-    # }
+    /* Chat messages */
+    .stChatMessage {
+        background-color: var(--green-bg-light);
+        border-radius: 0.5rem;
+        padding: 1rem;
+    }
 
-    # /* Text areas (Preview + Extracted) */
-    # .stTextArea textarea {
-    #     background-color: var(--green-bg-light);
-    #     border-radius: 0.4rem;
-    # }
+    /* Text areas (Preview + Extracted) */
+    .stTextArea textarea {
+        background-color: var(--green-bg-light);
+        border-radius: 0.4rem;
+    }
 
-    # /* Expander Header */
-    # .stExpanderHeader {
-    #     background-color: #c8e6c9;
-    #     font-weight: bold;
-    #     border-radius: 0.3rem;
-    # }
+    /* Expander Header */
+    .stExpanderHeader {
+        background-color: #c8e6c9;
+        font-weight: bold;
+        border-radius: 0.3rem;
+    }
 
-    # /* Metrics */
-    # .stMetric {
-    #     background-color: #e0f2f1;
-    #     border-radius: 0.6rem;
-    #     padding: 0.7rem;
-    #     font-weight: 600;
-    # }
+    /* Metrics */
+    .stMetric {
+        background-color: #e0f2f1;
+        border-radius: 0.6rem;
+        padding: 0.7rem;
+        font-weight: 600;
+    }
 
-    # /* File uploader */
-    # .stFileUploader {
-    #     border: 2px dashed var(--green-main);
-    #     border-radius: 8px;
-    # }
+    /* File uploader */
+    .stFileUploader {
+        border: 2px dashed var(--green-main);
+        border-radius: 8px;
+    }
 
-    # /* Tabs */
-    # .stTabs [role="tab"] {
-    #     color: var(--green-dark) !important;
-    # }
-    # .stTabs [role="tab"][aria-selected="true"] {
-    #     background-color: var(--green-bg-light);
-    #     color: var(--green-dark) !important;
-    # }
+    /* Tabs */
+    .stTabs [role="tab"] {
+        color: var(--green-dark) !important;
+    }
+    .stTabs [role="tab"][aria-selected="true"] {
+        background-color: var(--green-bg-light);
+        color: var(--green-dark) !important;
+    }
 
-    # /* Success messages */
-    # .stAlert.stSuccess {
-    #     background-color: #e8f5e9;
-    #     border-left: 4px solid var(--green-main);
-    # }
-    # </style>
-    # """,
-    #     unsafe_allow_html=True,
-    # )
+    /* Success messages */
+    .stAlert.stSuccess {
+        background-color: #e8f5e9;
+        border-left: 4px solid var(--green-main);
+    }
+    
+    div[data-testid="stChatInput"] textarea {
+        color: black !important;
+        background-color: white !important;
+        border-radius: 0.4rem;
+    }
 
-    st.title("📂 Smart Shop AI Assistant")
+    div[data-testid="stChatInput"] textarea::placeholder {
+        color: #e0e0e0 !important;
+    }
+    </style>
+    """,
+        unsafe_allow_html=True,
+    )
+
+    st.title("📂 Smart Shop AI Assistant 🤖")
     st.markdown("**Welcome to your intelligent business assistant!**")
     st.markdown("---")
 

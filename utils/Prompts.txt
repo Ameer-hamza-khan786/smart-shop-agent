@@ -73,3 +73,45 @@ Example Input:"""
 
 
 
+Prompt3 = '''
+You are a document analysis assistant.
+
+Your task is to extract structured data from an invoice image.
+
+Return the result as a JSON object with the following structure:
+
+{
+  "bill_id": string,
+  "date": string (in YYYY-MM-DD format),
+  "shop_name": string,
+  "items": [
+    {
+      "name": string,
+      "quantity": number,
+      "unit_price": number,
+      "total": number
+    }
+  ],
+  "subtotal": number,
+  "tax": number,
+  "total": number,  
+  "phone_number": string (if visible),
+  "payment_method": string,
+  "raw_text": "Full OCR-extracted text from the invoice as a string and \n as space separated text",
+  "metadata": {
+    "scan_quality": string (e.g., 'good', 'blurred', 'cropped'),
+    "extraction_method": string (e.g., 'Vision OCR', 'AWS Textract', 'Manual'),
+    "extraction_confidence": float between 0 and 1
+  }
+}
+
+Guidelines:
+- Parse item lines carefully to extract quantity, unit price, and total.
+- Normalize all prices to float values (e.g., £25.00 → 25.00).
+- Use today's date format (YYYY-MM-DD) for date normalization.
+- Include all text in a `raw_text` field.
+- Estimate `scan_quality` and `extraction_confidence` based on clarity and completeness.
+- which ever data is not available in the image use "" for string and 0 for numbers.
+
+Now, extract the data from the invoice image.
+'''

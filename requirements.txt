@@ -8,6 +8,4 @@ langchain_community
 langgraph
 langchain_tavily
 psycopg2
-uvicorn
-fastapi
-semantic-chunker
+streamlit
